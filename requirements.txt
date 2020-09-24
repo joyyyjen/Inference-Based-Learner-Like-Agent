@@ -1,0 +1,13 @@
+boto3
+numpy
+torch
+h5py
+tqdm
+spacy
+nltk
+sklearn
+matplotlib
+stanfordcorenlp
+pymongo
+httplib2
+bs4
