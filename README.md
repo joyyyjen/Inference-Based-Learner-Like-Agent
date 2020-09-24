@@ -7,8 +7,7 @@ In the language learning process, many English-as-a-second language learners oft
 Experimental results show that the proposed agent is equipped with good learner-like behavior to achieve the best performance in both fill-in-the-blank (FITB) and good example sentence selection tasks. We further deploy the proposed model to college ESL learners. The results of this study show that inference enables the ability to choose easy and helpful examples. Compared to other models, the proposed agent improves the score of more than 17\% of students in the post-test.
 
 
-### Getting Started
-#### Installation
+### Installation
 1. Clone this repository
 ```
 git clone https://github.com/joyyyjen/Inference-Based-Learner-Like-Agent.git
