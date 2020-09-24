@@ -28,20 +28,25 @@ unzip the data.zip in to a directory called"data"
 ### Training and Testing
 
 #### Training
+
 ```
 python3.6 __main__.py --wordpair common,ordinary --output_dir model_05_FITB --warmup_proportion 0.3 --num_train_epochs 2 --bert_model bert-base-uncased --do_train --local_rank 2 --device_ids 0 1 --multi --seed 4 --new_mode --entailment 
 ```
 To train a context-based learner-like agent, remove --entailment arguments from the commend above. 
 
 #### Testing
-``` python3.6 __main__.py --wordpair common,ordinary --output_dir model_05_FITB --warmup_proportion 0.3 --num_train_epochs 2 --cache_dir cache --bert_model bert-base-uncased --do_test --local_rank 2 --device_ids 0 1 --multi --seed 4
+
+``` 
+python3.6 __main__.py --wordpair common,ordinary --output_dir model_05_FITB --warmup_proportion 0.3 --num_train_epochs 2 --cache_dir cache --bert_model bert-base-uncased --do_test --local_rank 2 --device_ids 0 1 --multi --seed 4
 ```
 
 ### Experiments
 #### Behavior Check
+
 ```
 python3.6 __main__.py --entailment --wordpair {word-pair} --output_dir {model_path} --do_behavior_check --normal --reverse --double_reverse
 ```
+
 #### Sentence Selection
 
 ```
