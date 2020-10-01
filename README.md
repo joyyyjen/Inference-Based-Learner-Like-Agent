@@ -63,7 +63,34 @@ The dataset is separated into 30 files. Each file is named "WIKI_DATABASE_{word-
 
 In each data file, each sentence has its word-pair id, sentence_id, and word_id, in which sentence id and word id are pre-defined in GLOBAL_INDEX.json and word_to_id.json.
 
+Those are two instances in WIKI_DATABASE_small|little.json
+```
+"7_57_1": {
+                "word_id": 57,
+                "sentence_id": 1,
+                "rawSentence": "The sparse human population is largely nomadic, with some livestock, mostly small ruminants and camels.\n",
+                "targetWord": "small"
+                }
+"7_52_1122": {
+                "word_id": 52,
+                "sentence_id": 1122,
+                "rawSentence": "Finally, in April 1944, leukemia was diagnosed, but by this time, little could be done .\n",
+                "targetWord": "little"
+            }
+```
+Target words from raw sentences are replaced by a "[MASK]" using module "multiInstanceProcessor" when we load a choosen word-pair data. 
+
+
 **The Near-Synonym Example Extraction Evaluation Dataset** is annotated by an EFL expert to find the best examples for learners to learn the near-synonym difference. It consists of 600 sentences, 20 sentences for each wordpair, and 10 sentences for each word.
+
+The filename is "annotated_evaluation_dataset.tsv".
+Column one is a target word from a word-pair, column two is a raw sentence, and column three is the expert choice.(Y is accpet and N is reject) 
+
+For instance, a row can look like the following:
+```
+task	After being liberated, he left Cuba and headed to Costa Rica, where he dedicated his time to pedagogical tasks, and to his activities as leader of the PRD.	Y
+```
+
 
 ### Citation
 If you find our work useful in your research, please consider citing: 
