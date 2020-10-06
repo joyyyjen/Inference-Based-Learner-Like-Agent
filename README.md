@@ -1,6 +1,7 @@
 # Assessing the Helpfulness of Learning Materials with Inference-Based Learner-Like Agent
 
-Code for our EMNLP 2020 paper, "Assessing the Helpfulness of Learning Materials with Inference-Based Learner-Like Agent".
+Code for our EMNLP 2020 paper, ["Assessing the Helpfulness of Learning Materials with Inference-Based Learner-Like Agent"](https://arxiv.org/abs/2010.02179).
+
 
 ### Introduction:
 In the language learning process, many English-as-a-second language learners often have trouble using near-synonym words correctly, and often look for example sentences to learn how two nearly synonymous terms differ. In automatic example extraction research, prior work uses hand-crafted scores to recommend sentences but suffers from the complexity of human-designed scoring functions. We proposed to use an inference-based learner-like agent to mimic human behavior on learning from example sentences. This agent leverages entailment modeling to connect the question context and the correct answer.
@@ -93,4 +94,14 @@ task	After being liberated, he left Cuba and headed to Costa Rica, where he dedi
 
 
 ### Citation
+```
 If you find our work useful in your research, please consider citing: 
+@misc{jen2020assessing,
+      title={Assessing the Helpfulness of Learning Materials with Inference-Based Learner-Like Agent}, 
+      author={Yun-Hsuan Jen and Chieh-Yang Huang and Mei-Hua Chen and Ting-Hao 'Kenneth' Huang and Lun-Wei Ku},
+      year={2020},
+      eprint={2010.02179},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+```
